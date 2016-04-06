@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Countdowns Options</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flat-ui.css">
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                <nav class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">Countdowns Options</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="options timers-container">
+
+        </div>
+        <div class="row">
+            <div class="col-md-10 col-offset-1 col-lg-8 col-lg-offset-2 text-center">
+                <form>
+                    <button type="button" class="btn btn-primary btn-huge" id="addTimer">Add Timer</button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button type="button" class="btn btn-warning btn-huge" disabled="true" id="save">Save Options</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="hidden">
+        <div class="timer row">
+            <div class="col-md-10 col-offset-1 col-lg-8 col-lg-offset-2 text-center">
+                <form class="form-inline">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Timer Name" />
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="datetime-local" name="date" />
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="startOrEnd">
+                                <option value="end" default>end</option>
+                                <option value="start">start</option>
+                            </select>
+                        </div>
+                        <div class="btn-group">
+                            <a class="btn btn-primary delete" href="#"><i class="fui-cross"></i></a>
+                            <a class="btn btn-primary move-up" href="#"><i class="fui-triangle-up-small"></i></a>
+                            <a class="btn btn-primary move-down" href="#"><i class="fui-triangle-down-small"></i></a>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/flat-ui.js"></script>
+    <script src="js/options.js"></script>
+</body>
+
+</html>
